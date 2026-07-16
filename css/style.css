@@ -13,8 +13,11 @@ header{
 
 /* Navigation */
 nav{
-    background-color: #333333;
-    padding: 10px;
+    background-color:#333;
+    padding:10px;
+
+    display:inline-block;
+    width:80%;
 }
 
 /* Main content */
@@ -33,11 +36,12 @@ footer{
 }
 
 /* List items */
+/*
 li{
     display: inline-block;
     width: 180px;
 }
-
+/*
 /* Main heading */
 h1{
     text-align: center;
