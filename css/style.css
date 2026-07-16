@@ -1,8 +1,24 @@
+/* Body */
 body{
     font-family: Arial, sans-serif;
     font-size: 18px;
     background-color: #f5f5f5;
     margin: 0;
+}
+
+/* Skip to Main Content */
+a[href="#main"]{
+    position: absolute;
+    left: -999px;
+}
+
+a[href="#main"]:focus{
+    left: 10px;
+    top: 10px;
+    background-color: yellow;
+    color: black;
+    padding: 8px;
+    z-index: 1000;
 }
 
 /* Header */
@@ -13,18 +29,18 @@ header{
 
 /* Navigation */
 nav{
-    background-color:#333;
-    padding:10px;
-
-    display:inline-block;
-    width:80%;
+    background-color: #333333;
+    padding: 10px;
+    display: inline-block;
+    width: 80%;
 }
 
+/* Image inside nav */
 nav img{
     width: 10%;
 }
 
-/* Main content */
+/* Main */
 main{
     background-color: white;
     font-size: 18px;
@@ -39,25 +55,31 @@ footer{
     padding: 10px;
 }
 
-/* List items */
+footer a{
+    color: #FFD700;
+}
+
+/* List items (Homework 2 yêu cầu comment) */
 /*
 li{
     display: inline-block;
     width: 180px;
 }
-/*
-/* Main heading */
+*/
+
+/* Heading */
 h1{
     text-align: center;
     font-family: Georgia, serif;
     color: white;
 }
 
-/* Paragraphs */
+/* Paragraph */
 p{
     line-height: 1.8;
 }
 
+/* Grid layout */
 .grid{
     display: grid;
     grid-template-columns: 40% 40%;
@@ -66,12 +88,19 @@ p{
     row-gap: 20px;
 }
 
+/* Images inside grid */
 .grid img{
     width: 100%;
 }
 
+/* Flex layout */
 .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+/* Images inside flex */
+.flex img{
+    width: 30%;
 }
